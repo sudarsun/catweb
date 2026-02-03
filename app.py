@@ -5,17 +5,11 @@ app = Flask(__name__)
 
 # list of cat images
 images = [
-    "http://ak-hdl.buzzfed.com/static/2013-10/enhanced/webdr01/15/9/anigif_enhanced-buzz-31540-1381844535-8.gif",
-    "http://ak-hdl.buzzfed.com/static/2013-10/enhanced/webdr05/15/9/anigif_enhanced-buzz-26390-1381844163-18.gif",
-    "http://ak-hdl.buzzfed.com/static/2013-10/enhanced/webdr06/15/10/anigif_enhanced-buzz-1376-1381846217-0.gif",
-    "http://ak-hdl.buzzfed.com/static/2013-10/enhanced/webdr03/15/9/anigif_enhanced-buzz-3391-1381844336-26.gif",
-    "http://ak-hdl.buzzfed.com/static/2013-10/enhanced/webdr06/15/10/anigif_enhanced-buzz-29111-1381845968-0.gif",
-    "http://ak-hdl.buzzfed.com/static/2013-10/enhanced/webdr03/15/9/anigif_enhanced-buzz-3409-1381844582-13.gif",
-    "http://ak-hdl.buzzfed.com/static/2013-10/enhanced/webdr02/15/9/anigif_enhanced-buzz-19667-1381844937-10.gif",
-    "http://ak-hdl.buzzfed.com/static/2013-10/enhanced/webdr05/15/9/anigif_enhanced-buzz-26358-1381845043-13.gif",
-    "http://ak-hdl.buzzfed.com/static/2013-10/enhanced/webdr06/15/9/anigif_enhanced-buzz-18774-1381844645-6.gif",
-    "http://ak-hdl.buzzfed.com/static/2013-10/enhanced/webdr06/15/9/anigif_enhanced-buzz-25158-1381844793-0.gif",
-    "http://ak-hdl.buzzfed.com/static/2013-10/enhanced/webdr03/15/10/anigif_enhanced-buzz-11980-1381846269-1.gif"
+    "https://s3.aleatori.cat/a37032b754d0962441d46e5ac13a71abc6cf2ea24d8f86eea12bbb061944dc8e.jpg",
+    "https://s3.aleatori.cat/ba9f9e0bfb15223d1cabffceaae06ffeb002e1014f6bb07bd67c5080a464e36f.jpg",
+    "https://s3.aleatori.cat/9751046fc3908ab44df20ba39b073f3c1c9ebc48863b85c981390982cd2fd7ca.jpg",
+    "https://s3.aleatori.cat/2e3bf510be28e35ae9896adff3dac0ee8e84277cec6f9f083d066cace3314fa3.jpg",
+    "https://s3.aleatori.cat/c7e615cd1e3dd2418f75b3fbefd9e996b571d849d469dcfcce8c70d5f4e75328.jpg"
 ]
 
 @app.route('/')
