@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 import random
+import time
 
 app = Flask(__name__)
 
@@ -16,6 +17,14 @@ images = [
 def index():
     url = random.choice(images)
     return render_template('index.html', url=url)
+
+@app.route('/make_cpu_busy/<int:t>')
+def make_cpu_busy(t: int):
+    """Make the CPU busy for t seconds"""
+    start = time.time()
+    while time.time() - start < t:
+        pass
+    return f"CPU was busy for {t} seconds!"
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0")
